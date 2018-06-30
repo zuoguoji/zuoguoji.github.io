@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="solidity编辑 atom   autocomplete-solidity：代码自动补全 linter-solium，linter-solidity：代码检查错误 language-ethereum：代码高亮及代码片段solidity合约中属性和行为的访问权限属性:状态变量1234567891011121314pragma solidity ^0.4.4;// public | interna">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/06/30/solidity/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="solidity编辑 atom   autocomplete-solidity：代码自动补全 linter-solium，linter-solidity：代码检查错误 language-ethereum：代码高亮及代码片段solidity合约中属性和行为的访问权限属性:状态变量1234567891011121314pragma solidity ^0.4.4;// public | interna">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-23T13:01:51.199Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="solidity编辑 atom   autocomplete-solidity：代码自动补全 linter-solium，linter-solidity：代码检查错误 language-ethereum：代码高亮及代码片段solidity合约中属性和行为的访问权限属性:状态变量1234567891011121314pragma solidity ^0.4.4;// public | interna">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-solidity" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/30/solidity/" class="article-date">
+  <time datetime="2018-06-30T14:02:23.780Z" itemprop="datePublished">2018-06-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="solidity"><a href="#solidity" class="headerlink" title="solidity"></a>solidity</h1><h2 id="编辑"><a href="#编辑" class="headerlink" title="编辑"></a>编辑</h2><ol>
+<li>atom</li>
+</ol>
+<ul>
+<li>autocomplete-solidity：代码自动补全</li>
+<li>linter-solium，linter-solidity：代码检查错误</li>
+<li>language-ethereum：代码高亮及代码片段<h2 id="solidity合约中属性和行为的访问权限"><a href="#solidity合约中属性和行为的访问权限" class="headerlink" title="solidity合约中属性和行为的访问权限"></a>solidity合约中属性和行为的访问权限</h2><strong>属性</strong>:状态变量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.4;</span><br><span class="line">// public | internal | private</span><br><span class="line">contract Dog &#123;</span><br><span class="line">  // internal是合约默认访问权限</span><br><span class="line">  uint internal _age;</span><br><span class="line">  uint _height;</span><br><span class="line">  uint private _weight;</span><br><span class="line"></span><br><span class="line">  uint public _money;</span><br><span class="line"></span><br><span class="line">  function _money() constant returns (uint) &#123;</span><br><span class="line">    return _money;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>说明</strong>:属性默认类型为<code>internal</code>,<code>internal</code>和<code>private</code>类型的属性都不能被外部访问,当属性的类型为<code>public</code>时,会生成一个和属性名相同并且返回值就是当前属性的get函数<br>例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uint public _money;</span><br></pre></td></tr></table></figure></p>
+<p>会生成一个get函数并且会覆盖掉public类型的属性自动生成的get函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function _money() constant returns (uint) &#123;</span><br><span class="line">  return _money;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.4;</span><br><span class="line">// public | internal | private</span><br><span class="line">contract Dog &#123;</span><br><span class="line">  // internal是合约默认访问权限</span><br><span class="line">  uint internal _age;</span><br><span class="line">  uint _height;</span><br><span class="line">  uint private _weight;</span><br><span class="line"></span><br><span class="line">  uint public _money;</span><br><span class="line"></span><br><span class="line">  function _money() constant returns (uint) &#123;</span><br><span class="line">    return 88;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在这个代码中_money函数返回值为88,而不是0</p>
+<h2 id="方法-行为访问权限"><a href="#方法-行为访问权限" class="headerlink" title="方法/行为访问权限"></a>方法/行为访问权限</h2><p><strong>方法/行为</strong>:合约里面的函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.4;</span><br><span class="line"></span><br><span class="line">contract Dog &#123;</span><br><span class="line">  function age() constant returns (uint) &#123;</span><br><span class="line">    return 18;</span><br><span class="line">  &#125;</span><br><span class="line">  function height() constant returns (uint) &#123;</span><br><span class="line">    return 175;</span><br><span class="line">  &#125;</span><br><span class="line">  function weight() constant returns (uint) &#123;</span><br><span class="line">    return 120;</span><br><span class="line">  &#125;</span><br><span class="line">  function money() constant returns (uint) &#123;</span><br><span class="line">    return 80000;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="" alt=""><br>合约中的方法默认为<code>public</code>类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.4.4;</span><br><span class="line"></span><br><span class="line">contract Dog &#123;</span><br><span class="line">  function age() constant returns (uint) &#123;</span><br><span class="line">    return 18;</span><br><span class="line">  &#125;</span><br><span class="line">  function height() constant public returns (uint) &#123;</span><br><span class="line">    return 175;</span><br><span class="line">  &#125;</span><br><span class="line">  function weight() constant internal returns (uint) &#123;</span><br><span class="line">    return 120;</span><br><span class="line">  &#125;</span><br><span class="line">  function money() constant private returns (uint) &#123;</span><br><span class="line">    return 80000;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/30/solidity/" data-id="cjj1hi73g0003d0ty2g95vi90" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/06/30/Hello-world-0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello,world
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/06/30/Hello-Hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello,Hexo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/06/30/Hello-world-0/">Hello,world</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/solidity/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/Hello-Hexo/">Hello,Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
