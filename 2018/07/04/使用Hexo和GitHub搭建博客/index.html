@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="环境配置  本人电脑是Windows 10专业版64位  安装Node.js   进入Node.js官网下载安装包, 下载地址link,建议安装长期支持版本也就是LTS, 毕竟会经常维护和支持, 稳定性也更好 配置好Node.js的环境配置 检查是否安装成功可以在cmd中运行node -v和npm -v   安装Git   进入官网Git官网下载安装包,下载地址link, 刚开始接触建议默认安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/07/04/使用Hexo和GitHub搭建博客/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="环境配置  本人电脑是Windows 10专业版64位  安装Node.js   进入Node.js官网下载安装包, 下载地址link,建议安装长期支持版本也就是LTS, 毕竟会经常维护和支持, 稳定性也更好 配置好Node.js的环境配置 检查是否安装成功可以在cmd中运行node -v和npm -v   安装Git   进入官网Git官网下载安装包,下载地址link, 刚开始接触建议默认安装">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/0522F7B159F54321B85C298E82DDCA30/7553">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/6596DF64658342D3A1578A41A4A9F1CB/7562">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/8CD1AEC7895445858BDF9D57B4453D54/7565">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/9B3F53966639492982B4C61D9301C17A/7572">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/FFE67E691C6B49E3A740E2B705FFF604/7574">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3CDD245EC6994B28AA7907AB671A2332/7576">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/6CD45CABE0A04164BABD545E2025B248/7578">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/AE4EC94A52BE4A3FBE90022FBC55347A/7590">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/234B75EB0042487DBE77B5F5344CE1C6/7592">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/0BA3691530944CB7BBC6968763A51B4A/7594">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/B077BB7F1C1D4FD2893200C4874E67CE/7616">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/1B45AF04873B400AA746B2A664A31B38/7618">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/927CEFC433D44A889AF6687198239840/7620">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/B7944AA9842C40F5878136B1600C4E4E/7624">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/EAEE574A9C524391B5DA10E9A6E9846C/7626">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3BC49D9104B44191AE56E4BED17F8F6F/7628">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/DD7BEE0A03654AC6B569862E6DF676C0/7634">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/CF04564B628949E6B674B18FBF6DFA0C/7637">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/05AA3DF6DC1E4F2DAC7605698CEA0B30/7641">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/05E051EFD5744DA4A50DD6A21FFDDA1F/7649">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3C6F4376D8F045CD9200A3EE1D5F36BC/7647">
+<meta property="og:updated_time" content="2018-07-04T10:36:20.247Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="环境配置  本人电脑是Windows 10专业版64位  安装Node.js   进入Node.js官网下载安装包, 下载地址link,建议安装长期支持版本也就是LTS, 毕竟会经常维护和支持, 稳定性也更好 配置好Node.js的环境配置 检查是否安装成功可以在cmd中运行node -v和npm -v   安装Git   进入官网Git官网下载安装包,下载地址link, 刚开始接触建议默认安装">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/0522F7B159F54321B85C298E82DDCA30/7553">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-使用Hexo和GitHub搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/04/使用Hexo和GitHub搭建博客/" class="article-date">
+  <time datetime="2018-07-04T10:37:03.580Z" itemprop="datePublished">2018-07-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol start="0">
+<li>环境配置</li>
+</ol>
+<p>本人电脑是Windows 10专业版64位</p>
+<ol>
+<li>安装Node.js</li>
+</ol>
+<ul>
+<li>进入Node.js官网下载安装包, 下载地址<a href="https://nodejs.org/en/" target="_blank" rel="noopener">link</a>,建议安装长期支持版本也就是<code>LTS</code>, 毕竟会经常维护和支持, 稳定性也更好</li>
+<li>配置好Node.js的环境配置</li>
+<li>检查是否安装成功可以在<code>cmd</code>中运行<code>node -v</code>和<code>npm -v</code><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/0522F7B159F54321B85C298E82DDCA30/7553" alt="image"></li>
+</ul>
+<ol start="2">
+<li>安装Git</li>
+</ol>
+<ul>
+<li>进入官网Git官网下载安装包,下载地址<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">link</a>, 刚开始接触建议默认安装模式</li>
+<li>记得配置好环境变量, 在桌面任何空白位置鼠标右键如出现<code>Git GUI</code>和<code>Git Bash</code>以下选择及安装成功<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/6596DF64658342D3A1578A41A4A9F1CB/7562" alt="image"></li>
+</ul>
+<ol start="3">
+<li>GitHub账号注册和新建项目</li>
+</ol>
+<ul>
+<li>新建项目安装固定格式: <code>账户名.github.io</code>, 然后勾选Initialize this repository with a README. <img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/8CD1AEC7895445858BDF9D57B4453D54/7565" alt="image"></li>
+<li>设置成功即可访问你的blog, 访问地址: <code>https://账户名.github.io</code></li>
+</ul>
+<ol start="4">
+<li>安装Hexo</li>
+</ol>
+<ul>
+<li>建议在非系统盘下建一个文件夹, 比如我在F盘建了blog文件夹<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/9B3F53966639492982B4C61D9301C17A/7572" alt="image"></li>
+<li>在此目录运行命令安装Hexo<code>npm install hexo -g</code><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/FFE67E691C6B49E3A740E2B705FFF604/7574" alt="image"></li>
+<li>运行命令<code>hexo -v</code>, 检查hexo看是否安装成功<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3CDD245EC6994B28AA7907AB671A2332/7576" alt="image"></li>
+<li>运行命令<code>hexo init</code>, 初始化该文件夹<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/6CD45CABE0A04164BABD545E2025B248/7578" alt="image"></li>
+<li>运行命令<code>npm install</code>,安装所需要的组件<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/AE4EC94A52BE4A3FBE90022FBC55347A/7590" alt="image"></li>
+<li>运行命令<code>hexo g</code><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/234B75EB0042487DBE77B5F5344CE1C6/7592" alt="image"></li>
+<li>运行命令<code>hexo s</code>, 在本地启动服务即可访问改地址<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/0BA3691530944CB7BBC6968763A51B4A/7594" alt="image"></li>
+</ul>
+<ol start="5">
+<li>设置Git</li>
+</ol>
+<ul>
+<li>设置Git的user.name和user.email<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/B077BB7F1C1D4FD2893200C4874E67CE/7616" alt="image"><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/1B45AF04873B400AA746B2A664A31B38/7618" alt="image"></li>
+<li>运行命令<code>ssh-keygen -t rsa -C &quot;1559764912@qq.com&quot;</code>, 默认选择连续三个回车, 将会生成密钥, 得到两个文件<code>id_rsa</code>和<code>id_rsa.pub</code>, 默认文件地址: <code>C:\Users\Administrator\.ssh</code><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/927CEFC433D44A889AF6687198239840/7620" alt="image"></li>
+<li>运行<code>eval &quot;$(ssh-agent -s)&quot;</code>, 添加秘钥到shh-agent<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/B7944AA9842C40F5878136B1600C4E4E/7624" alt="image"></li>
+<li>运行命令<code>ssh-add ~/.ssh/id_rsa</code>, 添加生成的ssh key到ssh-agent<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/EAEE574A9C524391B5DA10E9A6E9846C/7626" alt="image"></li>
+</ul>
+<ol start="6">
+<li>设置GitHub</li>
+</ol>
+<ul>
+<li>GitHub账号设置中添加ssh<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3BC49D9104B44191AE56E4BED17F8F6F/7628" alt="image"></li>
+<li>新建一个ssh key, 将id_rsa.pub文件内容粘贴至key中<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/DD7BEE0A03654AC6B569862E6DF676C0/7634" alt="image"></li>
+<li>Git中运行运行命令<code>ssh -T git@github.com</code>, 测试添加ssh是否成功, 如果看到你的用户名即表示已成功<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/CF04564B628949E6B674B18FBF6DFA0C/7637" alt="image"></li>
+<li>在blog文件夹中找到<code>_config.yml</code>文件,修改其值, 替换成你的用户名<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/05AA3DF6DC1E4F2DAC7605698CEA0B30/7641" alt="image"></li>
+</ul>
+<ol start="7">
+<li>发布博客</li>
+</ol>
+<ul>
+<li>在<code>cmd</code>中运行<code>hexo new post &quot;博客名&quot;</code>, 此时会在<code>source &gt; _posts</code>文件夹中创建该文件,以markdown格式保存, 以后可以把文件放在此目录下<img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/05E051EFD5744DA4A50DD6A21FFDDA1F/7649" alt="image"></li>
+<li>运行命令<code>npm install hexo-deployer-git --save</code>, 安装此扩展以便生产和部署文章</li>
+<li>生产部署文章<code>hexo d -g</code></li>
+<li>此时即可访问你个人博客<code>https://用户名.github.io</code><img src="https://note.youdao.com/yws/public/resource/a4719660bf2bc8ea8b330c03016c1214/xmlnote/3C6F4376D8F045CD9200A3EE1D5F36BC/7647" alt="image"></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/04/使用Hexo和GitHub搭建博客/" data-id="cjj712ad30000g8ty47mnfvra" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/30/Hello-world-0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello,world</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/04/使用Hexo和GitHub搭建博客/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/Hello-world-0/">Hello,world</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/solidity/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/Hello-Hexo/">Hello,Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2018/06/30/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
